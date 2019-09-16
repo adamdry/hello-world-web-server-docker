@@ -1,0 +1,22 @@
+{
+  "name": "hello-world-web-server-docker",
+  "version": "1.0.0",
+  "description": "A simple node (express) web server that serves a hello world html page and http 200 response over port 80",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamdry/hello-world-web-server-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamdry/hello-world-web-server-docker/issues"
+  },
+  "homepage": "https://github.com/adamdry/hello-world-web-server-docker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
