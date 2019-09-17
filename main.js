@@ -1,10 +1,13 @@
 const express = require('express')
+const uuidv1 = require('uuid/v1');
 const app = express()
 const port = 80
 
-app.get('/', (req, res) => res.send(`Hello World! from "hello-world-web-server-docker" ${getDateTimeStr()}`))
+const uuid = uuidv1(); // ⇨ '2c5ea4c0-4067-11e9-8bad-9b1deb4d3b7d'
 
-app.listen(port, () => console.log(`Example app listening on port ${port}! from "hello-world-web-server-docker" ${getDateTimeStr()}`))
+app.get('/', (req, res) => res.send(`Hello World! from "hello-world-web-server-docker" instanceid: ${uuid} time: ${getDateTimeStr()}`))
+
+app.listen(port, () => console.log(`Example app listening on port ${port}! from "hello-world-web-server-docker" instanceid: ${uuid} time: ${getDateTimeStr()}`))
 
 
 // this allows Ctrl+C to stop the docker container
